@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
-</head>
-<body>
-  <div class="inner">
-  <p class="test">変更のテスト</p>
-</div>
-</body>
-</html>
+<?php get_header(); ?>
+
+<section class="container">
+  <main class="main">
+    <h2>front-page.php</h2>
+    <!-- cards-gallery-list -->
+    <!-- cards-gallery-list -->
+    <?php get_template_part('template-parts/loop', 'article') ?>
+    <!-- /cards-gallery-list -->
+    <!-- /cards-gallery -->
+  </main>
+  <aside class="sidebar">
+    <?php include('sidebar.php'); ?>
+  </aside>
+</section>
+<!-- modal -->
+<?php include('modal/modal.php') ?>
+<!-- /modal -->
+
+<?php get_footer(); ?>
